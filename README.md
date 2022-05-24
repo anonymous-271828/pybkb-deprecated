@@ -24,4 +24,9 @@ python3 run_keel_benchmark_scores.py
 python3 run_keel_benchmark_from_scores.py
 ```
 
+To run the TCGA learning, first download the data as described above and run:
+```learn_tcga
+python3 run_tcga.py
+```
+
 ## Evaluation
