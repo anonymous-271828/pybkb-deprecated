@@ -14,7 +14,14 @@ If you wish to run BN or BKB learning from scratch then you will also need to in
 We have included pre-trained BKBs and BNs at the following anonymous [Google Drive link]() which can be downloaded directly our mounted in the cloud using Google Colab which will be discussed the Evaluation section.
 
 If you wish to run training from scratch, you will need to ensure the above requirements are met, download the pre-processed KEEL datasets and/or TCGA breast cancer dataset from the following anonymous [Google Drive Link]() and run the following to scripts:
-1. Run the following script nips_experiments/run_keel_benchmark_scores.py to generate all necessary scores.
-2. Upon completion of the score calculations, run nips/experiments/run_keel_benchmark_from_scores.py.
+1. Navigate to nips_experiments
+2. Run the following script to generate the scores for KEEL benchmarks:
+```score
+python3 run_keel_benchmark_scores.py
+```
+4. Upon completion of the KEEL score calculations, run the following script to learn the associated BKBs and BNs for KEEL:
+```learn
+python3 run_keel_benchmark_from_scores.py
+```
 
 ## Evaluation
