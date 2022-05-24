@@ -1,5 +1,5 @@
 # Learning the Finer Things: Bayesian Structure Learning at the Instantiation Level
-This repository is the official implementation of [Learning the Finer Things](https://openreview.net/forum?id=tQQiKqGLK0g&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2022%2FConference%2FAuthors%23your-submissions).
+This repository is the official implementation of [Learning the Finer Things](https://openreview.net/forum?id=tQQiKqGLK0g&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2022%2FConference%2FAuthors%23your-submissions)).
 
 ## Requirements
 
