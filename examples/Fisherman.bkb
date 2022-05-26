@@ -1,0 +1,186 @@
+COMPONENTS: 9
+
+36 (B) Has (access to) a (fishing) boat
+	STATES: 2
+		  2 No
+		  3 Yes
+
+22 (B) Fishing cost is ok
+	STATES: 2
+		  2 No
+		  3 Yes
+
+19 (B) Has fishing net
+	STATES: 2
+		  2 No
+		  3 Yes
+
+25 (G) Livelihood is fishing
+	STATES: 2
+		  2 No
+		  3 Yes
+
+29 (B) Fish supply is sufficient
+	STATES: 2
+		  3 Yes
+		  2 No
+
+25 (B) Fishing benefit is ok
+	STATES: 2
+		  2 No
+		  3 Yes
+
+20 (X) Seafaring skills
+	STATES: 2
+		  2 No
+		  3 Yes
+
+22 (B) Has fishing skills
+	STATES: 2
+		  2 No
+		  3 Yes
+
+25 (B) Has fishing equipment
+	STATES: 2
+		  2 No
+		  3 Yes
+
+29 (B) Fish supply is sufficient
+	 2 No
+		SUPPORTS: 1
+			0.03 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.97 TAIL: 0
+25 (B) Fishing benefit is ok
+	 2 No
+		SUPPORTS: 2
+			1.0 TAIL: 1
+				29 (B) Fish supply is sufficient 2 No
+			0.0 TAIL: 1
+				29 (B) Fish supply is sufficient 3 Yes
+	 3 Yes
+		SUPPORTS: 2
+			1.0 TAIL: 1
+				29 (B) Fish supply is sufficient 3 Yes
+			0.0 TAIL: 1
+				29 (B) Fish supply is sufficient 2 No
+22 (B) Fishing cost is ok
+	 2 No
+		SUPPORTS: 4
+			0.001 TAIL: 2
+				25 (B) Has fishing equipment 3 Yes
+				22 (B) Has fishing skills 3 Yes
+			0.6 TAIL: 2
+				25 (B) Has fishing equipment 2 No
+				22 (B) Has fishing skills 3 Yes
+			0.3 TAIL: 2
+				22 (B) Has fishing skills 2 No
+				25 (B) Has fishing equipment 3 Yes
+			0.999 TAIL: 2
+				25 (B) Has fishing equipment 2 No
+				22 (B) Has fishing skills 2 No
+	 3 Yes
+		SUPPORTS: 4
+			0.999 TAIL: 2
+				25 (B) Has fishing equipment 3 Yes
+				22 (B) Has fishing skills 3 Yes
+			0.4 TAIL: 2
+				25 (B) Has fishing equipment 2 No
+				22 (B) Has fishing skills 3 Yes
+			0.7 TAIL: 2
+				25 (B) Has fishing equipment 3 Yes
+				22 (B) Has fishing skills 2 No
+			0.001 TAIL: 2
+				22 (B) Has fishing skills 2 No
+				25 (B) Has fishing equipment 2 No
+36 (B) Has (access to) a (fishing) boat
+	 2 No
+		SUPPORTS: 1
+			0.01 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.99 TAIL: 0
+25 (B) Has fishing equipment
+	 2 No
+		SUPPORTS: 4
+			0.25 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+				19 (B) Has fishing net 2 No
+			0.001 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+				19 (B) Has fishing net 3 Yes
+			0.75 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 2 No
+				19 (B) Has fishing net 3 Yes
+			0.999 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 2 No
+				19 (B) Has fishing net 2 No
+	 3 Yes
+		SUPPORTS: 4
+			0.999 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+				19 (B) Has fishing net 3 Yes
+			0.25 TAIL: 2
+				19 (B) Has fishing net 3 Yes
+				36 (B) Has (access to) a (fishing) boat 2 No
+			0.75 TAIL: 2
+				19 (B) Has fishing net 2 No
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+			0.001 TAIL: 2
+				19 (B) Has fishing net 2 No
+				36 (B) Has (access to) a (fishing) boat 2 No
+19 (B) Has fishing net
+	 2 No
+		SUPPORTS: 1
+			0.01 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.99 TAIL: 0
+22 (B) Has fishing skills
+	 2 No
+		SUPPORTS: 1
+			1.0 TAIL: 1
+				20 (X) Seafaring skills 2 No
+	 3 Yes
+		SUPPORTS: 1
+			1.0 TAIL: 1
+				20 (X) Seafaring skills 3 Yes
+25 (G) Livelihood is fishing
+	 2 No
+		SUPPORTS: 4
+			0.001 TAIL: 2
+				25 (B) Fishing benefit is ok 3 Yes
+				22 (B) Fishing cost is ok 3 Yes
+			0.2 TAIL: 2
+				22 (B) Fishing cost is ok 3 Yes
+				25 (B) Fishing benefit is ok 2 No
+			0.6 TAIL: 2
+				25 (B) Fishing benefit is ok 3 Yes
+				22 (B) Fishing cost is ok 2 No
+			0.9 TAIL: 2
+				22 (B) Fishing cost is ok 2 No
+				25 (B) Fishing benefit is ok 2 No
+	 3 Yes
+		SUPPORTS: 4
+			0.1 TAIL: 2
+				25 (B) Fishing benefit is ok 2 No
+				22 (B) Fishing cost is ok 2 No
+			0.999 TAIL: 2
+				25 (B) Fishing benefit is ok 3 Yes
+				22 (B) Fishing cost is ok 3 Yes
+			0.4 TAIL: 2
+				25 (B) Fishing benefit is ok 3 Yes
+				22 (B) Fishing cost is ok 2 No
+			0.8 TAIL: 2
+				25 (B) Fishing benefit is ok 2 No
+				22 (B) Fishing cost is ok 3 Yes
+20 (X) Seafaring skills
+	 2 No
+		SUPPORTS: 1
+			0.001 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.999 TAIL: 0
+
+FREE_SUPPORTS:

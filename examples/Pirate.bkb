@@ -1,0 +1,252 @@
+COMPONENTS: 10
+
+24 (G) Livelihood is piracy
+	STATES: 2
+		  2 No
+		  3 Yes
+
+27 (B) Attitude towards piracy
+	STATES: 2
+		  8 Negative
+		  8 Positive
+
+26 (B) Weapons are obtainable
+	STATES: 2
+		  2 No
+		  3 Yes
+
+24 (B) Piracy benefit is ok
+	STATES: 2
+		  2 No
+		  3 Yes
+
+24 (B) Has piracy equipment
+	STATES: 2
+		  2 No
+		  3 Yes
+
+21 (B) Has piracy skills
+	STATES: 2
+		  2 No
+		  3 Yes
+
+19 (X) Boarding skills
+	STATES: 2
+		  2 No
+		  3 Yes
+
+20 (X) Seafaring skills
+	STATES: 2
+		  2 No
+		  3 Yes
+
+15 (B) Has a skiff
+	STATES: 2
+		  2 No
+		  3 Yes
+
+21 (B) Piracy cost is ok
+	STATES: 2
+		  2 No
+		  3 Yes
+
+27 (B) Attitude towards piracy
+	 8 Negative
+		SUPPORTS: 1
+			0.99 TAIL: 0
+	 8 Positive
+		SUPPORTS: 1
+			0.01 TAIL: 0
+15 (B) Has a skiff
+	 2 No
+		SUPPORTS: 1
+			0.1 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.9 TAIL: 0
+24 (B) Has piracy equipment
+	 2 No
+		SUPPORTS: 4
+			0.05 TAIL: 2
+				26 (B) Weapons are obtainable 3 Yes
+				15 (B) Has a skiff 3 Yes
+			0.4 TAIL: 2
+				15 (B) Has a skiff 2 No
+				26 (B) Weapons are obtainable 3 Yes
+			0.6 TAIL: 2
+				26 (B) Weapons are obtainable 2 No
+				15 (B) Has a skiff 3 Yes
+			0.99 TAIL: 2
+				26 (B) Weapons are obtainable 2 No
+				15 (B) Has a skiff 2 No
+	 3 Yes
+		SUPPORTS: 4
+			0.95 TAIL: 2
+				15 (B) Has a skiff 3 Yes
+				26 (B) Weapons are obtainable 3 Yes
+			0.4 TAIL: 2
+				15 (B) Has a skiff 3 Yes
+				26 (B) Weapons are obtainable 2 No
+			0.6 TAIL: 2
+				26 (B) Weapons are obtainable 3 Yes
+				15 (B) Has a skiff 2 No
+			0.01 TAIL: 2
+				15 (B) Has a skiff 2 No
+				26 (B) Weapons are obtainable 2 No
+21 (B) Has piracy skills
+	 2 No
+		SUPPORTS: 4
+			0.5 TAIL: 2
+				20 (X) Seafaring skills 2 No
+				19 (X) Boarding skills 3 Yes
+			0.9 TAIL: 2
+				19 (X) Boarding skills 2 No
+				20 (X) Seafaring skills 2 No
+			0.5 TAIL: 2
+				19 (X) Boarding skills 2 No
+				20 (X) Seafaring skills 3 Yes
+			0.1 TAIL: 2
+				19 (X) Boarding skills 3 Yes
+				20 (X) Seafaring skills 3 Yes
+	 3 Yes
+		SUPPORTS: 4
+			0.9 TAIL: 2
+				20 (X) Seafaring skills 3 Yes
+				19 (X) Boarding skills 3 Yes
+			0.5 TAIL: 2
+				20 (X) Seafaring skills 2 No
+				19 (X) Boarding skills 3 Yes
+			0.5 TAIL: 2
+				19 (X) Boarding skills 2 No
+				20 (X) Seafaring skills 3 Yes
+			0.1 TAIL: 2
+				19 (X) Boarding skills 2 No
+				20 (X) Seafaring skills 2 No
+24 (B) Piracy benefit is ok
+	 2 No
+		SUPPORTS: 1
+			0.3 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.7 TAIL: 0
+21 (B) Piracy cost is ok
+	 2 No
+		SUPPORTS: 4
+			0.9 TAIL: 2
+				24 (B) Has piracy equipment 2 No
+				21 (B) Has piracy skills 2 No
+			0.5 TAIL: 2
+				24 (B) Has piracy equipment 2 No
+				21 (B) Has piracy skills 3 Yes
+			0.7 TAIL: 2
+				21 (B) Has piracy skills 2 No
+				24 (B) Has piracy equipment 3 Yes
+			0.3 TAIL: 2
+				21 (B) Has piracy skills 3 Yes
+				24 (B) Has piracy equipment 3 Yes
+	 3 Yes
+		SUPPORTS: 4
+			0.7 TAIL: 2
+				24 (B) Has piracy equipment 3 Yes
+				21 (B) Has piracy skills 3 Yes
+			0.5 TAIL: 2
+				21 (B) Has piracy skills 3 Yes
+				24 (B) Has piracy equipment 2 No
+			0.3 TAIL: 2
+				21 (B) Has piracy skills 2 No
+				24 (B) Has piracy equipment 3 Yes
+			0.1 TAIL: 2
+				24 (B) Has piracy equipment 2 No
+				21 (B) Has piracy skills 2 No
+26 (B) Weapons are obtainable
+	 2 No
+		SUPPORTS: 1
+			0.65 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.35 TAIL: 0
+24 (G) Livelihood is piracy
+	 2 No
+		SUPPORTS: 8
+			0.95 TAIL: 3
+				27 (B) Attitude towards piracy 8 Negative
+				21 (B) Piracy cost is ok 3 Yes
+				24 (B) Piracy benefit is ok 3 Yes
+			0.999 TAIL: 3
+				27 (B) Attitude towards piracy 8 Negative
+				24 (B) Piracy benefit is ok 2 No
+				21 (B) Piracy cost is ok 2 No
+			0.6 TAIL: 3
+				24 (B) Piracy benefit is ok 2 No
+				27 (B) Attitude towards piracy 8 Positive
+				21 (B) Piracy cost is ok 3 Yes
+			0.995 TAIL: 3
+				24 (B) Piracy benefit is ok 3 Yes
+				21 (B) Piracy cost is ok 2 No
+				27 (B) Attitude towards piracy 8 Negative
+			0.05 TAIL: 3
+				21 (B) Piracy cost is ok 3 Yes
+				24 (B) Piracy benefit is ok 3 Yes
+				27 (B) Attitude towards piracy 8 Positive
+			0.995 TAIL: 3
+				21 (B) Piracy cost is ok 3 Yes
+				27 (B) Attitude towards piracy 8 Negative
+				24 (B) Piracy benefit is ok 2 No
+			0.3 TAIL: 3
+				21 (B) Piracy cost is ok 2 No
+				24 (B) Piracy benefit is ok 3 Yes
+				27 (B) Attitude towards piracy 8 Positive
+			0.5 TAIL: 3
+				24 (B) Piracy benefit is ok 2 No
+				21 (B) Piracy cost is ok 2 No
+				27 (B) Attitude towards piracy 8 Positive
+	 3 Yes
+		SUPPORTS: 8
+			0.05 TAIL: 3
+				27 (B) Attitude towards piracy 8 Negative
+				21 (B) Piracy cost is ok 3 Yes
+				24 (B) Piracy benefit is ok 3 Yes
+			0.001 TAIL: 3
+				24 (B) Piracy benefit is ok 2 No
+				21 (B) Piracy cost is ok 2 No
+				27 (B) Attitude towards piracy 8 Negative
+			0.4 TAIL: 3
+				24 (B) Piracy benefit is ok 2 No
+				27 (B) Attitude towards piracy 8 Positive
+				21 (B) Piracy cost is ok 3 Yes
+			0.5 TAIL: 3
+				21 (B) Piracy cost is ok 2 No
+				27 (B) Attitude towards piracy 8 Positive
+				24 (B) Piracy benefit is ok 2 No
+			0.95 TAIL: 3
+				24 (B) Piracy benefit is ok 3 Yes
+				27 (B) Attitude towards piracy 8 Positive
+				21 (B) Piracy cost is ok 3 Yes
+			0.005 TAIL: 3
+				27 (B) Attitude towards piracy 8 Negative
+				21 (B) Piracy cost is ok 3 Yes
+				24 (B) Piracy benefit is ok 2 No
+			0.7 TAIL: 3
+				24 (B) Piracy benefit is ok 3 Yes
+				27 (B) Attitude towards piracy 8 Positive
+				21 (B) Piracy cost is ok 2 No
+			0.005 TAIL: 3
+				24 (B) Piracy benefit is ok 3 Yes
+				21 (B) Piracy cost is ok 2 No
+				27 (B) Attitude towards piracy 8 Negative
+19 (X) Boarding skills
+	 2 No
+		SUPPORTS: 1
+			0.95 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.05 TAIL: 0
+20 (X) Seafaring skills
+	 2 No
+		SUPPORTS: 1
+			0.1 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.9 TAIL: 0
+
+FREE_SUPPORTS:

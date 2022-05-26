@@ -1,0 +1,100 @@
+[ {
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.8.2",
+  "target_cytoscapejs_version" : "~2.1",
+  "title" : "default",
+  "style" : [ {
+    "selector" : "node",
+    "css" : {
+      "shape" : "roundrectangle",
+      "border-color" : "rgb(204,204,204)",
+      "font-family" : "SansSerif.plain",
+      "font-weight" : "normal",
+      "border-opacity" : 1.0,
+      "background-opacity" : 1.0,
+      "font-size" : 12,
+      "width": "data(label_width)",
+      "text-opacity" : 1.0,
+      "height" : 35.0,
+      "background-color" : "rgb(137,208,245)",
+      "text-valign" : "center",
+      "text-halign" : "center",
+      "border-width" : 0.0,
+      "color" : "rgb(0,0,0)",
+      "content" : "data(id)"
+    }
+  }, {
+    "selector" : "node[type = 's']",
+    "css" : {
+      "shape" : "ellipse"
+    }
+  }, {
+    "selector" : "node[type = 's']",
+    "css" : {
+      "background-color" : "rgb(0,0,0)"
+    }
+  }, {
+    "selector" : "node[type = 's']",
+    "css" : {
+      "text-valign" : "bottom",
+      "text-halign" : "right"
+    }
+  }, {
+    "selector" : "node[type = 's']",
+    "css" : {
+      "height" : 10.0
+    }
+  }, {
+    "selector" : "node[type = 's']",
+    "css" : {
+      "width" : 10.0
+    }
+  }, {
+    "selector" : "node[type = 'src_f']",
+    "css" : {
+      "background-color" : "rgb(153,204,0)",
+      "text-valign": "top"
+    }
+  }, {
+    "selector" : "node[type = 'src_i']",
+    "css" : {
+      "background-color" : "rgb(204,204,204)"
+    }
+  }, {
+    "selector" : "node[type = 'src_c']",
+    "css" : {
+      "background-color" : "rgb(204,255,204)"
+    }
+  }, {
+    "selector" : "node:selected",
+    "css" : {
+      "background-color" : "rgb(255,255,0)"
+    }
+  }, {
+    "selector" : "edge",
+    "style" : {
+      "curve-style": "bezier",
+      "target-arrow-shape" : "triangle",
+      "target-arrow-color" : "rgb(0,0,0)"
+    }
+  }, {
+  "selector": "edge.directed",
+  "style": {
+      "curve-style": "bezier",
+      "target-arrow-shape": "triangle",
+      "target-arrow-color" : "rgb(0,0,0)"
+    }
+  }, {
+  "selector": "edge.multiple_edges",
+      "style": {
+          "curve-style": "bezier"
+    }
+  }, {
+    "selector" : "edge:selected",
+    "css" : {
+      "line-color" : "rgb(255,0,0)"
+    }
+  }
+  ]
+}
+]

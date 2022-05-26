@@ -1,0 +1,68 @@
+COMPONENTS: 4
+
+16 ReproduceAbility
+	STATES: 2
+		  4 High
+		  3 Low
+8 pH_Value
+	STATES: 3
+		  5 gt7.5
+		  6 Normal
+		  5 lt6.5
+9 OverCrowd
+	STATES: 2
+		  3 Yes
+		  2 No
+9 AcidLevel
+	STATES: 2
+		  4 High
+		  3 Low
+
+16 ReproduceAbility
+	 4 High
+		SUPPORTS: 2
+			0.9 TAIL: 1
+				8 pH_Value 6 Normal
+			0.22 TAIL: 1
+				8 pH_Value 5 lt6.5
+	 3 Low
+		SUPPORTS: 2
+			0.1 TAIL: 1
+				8 pH_Value 6 Normal
+			0.78 TAIL: 1
+				8 pH_Value 5 lt6.5
+8 pH_Value
+	 5 gt7.5
+		SUPPORTS: 1
+			0.05 TAIL: 1
+				9 AcidLevel 4 High
+	 6 Normal
+		SUPPORTS: 1
+			0.15 TAIL: 1
+				9 AcidLevel 4 High
+	 5 lt6.5
+		SUPPORTS: 2
+			0.8 TAIL: 1
+				9 AcidLevel 4 High
+			0.6 TAIL: 2
+				9 AcidLevel 3 Low
+				9 OverCrowd 3 Yes
+9 OverCrowd
+	 3 Yes
+		SUPPORTS: 1
+			0.25 TAIL: 0
+	 2 No
+		SUPPORTS: 2
+			0.5 TAIL: 1
+				16 ReproduceAbility 4 High
+			0.75 TAIL: 1
+				16 ReproduceAbility 3 Low
+9 AcidLevel
+	 4 High
+		SUPPORTS: 1
+			0.1 TAIL: 0
+	 3 Low
+		SUPPORTS: 1
+			0.9 TAIL: 0
+
+FREE_SUPPORTS:

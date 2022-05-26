@@ -1,0 +1,104 @@
+COMPONENTS: 5
+
+25 (B) Tsunami just occurred
+	STATES: 2
+		  3 Yes
+		  2 No
+
+26 (B) Tsunami is destructive
+	STATES: 2
+		  3 Yes
+		  2 No
+
+25 (B) Has fishing equipment
+	STATES: 2
+		  2 No
+		  3 Yes
+
+36 (B) Has (access to) a (fishing) boat
+	STATES: 2
+		  2 No
+		  3 Yes
+
+36 (B) Fishing livelihood is threatened
+	STATES: 2
+		  3 Yes
+		  2 No
+
+36 (B) Fishing livelihood is threatened
+	 2 No
+		SUPPORTS: 4
+			0.01 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 2 No
+				25 (B) Has fishing equipment 2 No
+			0.8 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+				25 (B) Has fishing equipment 3 Yes
+			0.15 TAIL: 2
+				25 (B) Has fishing equipment 3 Yes
+				36 (B) Has (access to) a (fishing) boat 2 No
+			0.45 TAIL: 2
+				25 (B) Has fishing equipment 2 No
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+	 3 Yes
+		SUPPORTS: 4
+			0.2 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+				25 (B) Has fishing equipment 3 Yes
+			0.99 TAIL: 2
+				25 (B) Has fishing equipment 2 No
+				36 (B) Has (access to) a (fishing) boat 2 No
+			0.85 TAIL: 2
+				25 (B) Has fishing equipment 3 Yes
+				36 (B) Has (access to) a (fishing) boat 2 No
+			0.55 TAIL: 2
+				36 (B) Has (access to) a (fishing) boat 3 Yes
+				25 (B) Has fishing equipment 2 No
+36 (B) Has (access to) a (fishing) boat
+	 2 No
+		SUPPORTS: 2
+			0.6 TAIL: 1
+				26 (B) Tsunami is destructive 3 Yes
+			0.1 TAIL: 1
+				26 (B) Tsunami is destructive 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.4 TAIL: 1
+				26 (B) Tsunami is destructive 3 Yes
+			0.9 TAIL: 1
+				26 (B) Tsunami is destructive 2 No
+25 (B) Has fishing equipment
+	 2 No
+		SUPPORTS: 2
+			0.9 TAIL: 1
+				26 (B) Tsunami is destructive 3 Yes
+			0.01 TAIL: 1
+				26 (B) Tsunami is destructive 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.1 TAIL: 1
+				26 (B) Tsunami is destructive 3 Yes
+			0.99 TAIL: 1
+				26 (B) Tsunami is destructive 2 No
+26 (B) Tsunami is destructive
+	 2 No
+		SUPPORTS: 2
+			0.2 TAIL: 1
+				25 (B) Tsunami just occurred 3 Yes
+			0.99 TAIL: 1
+				25 (B) Tsunami just occurred 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.8 TAIL: 1
+				25 (B) Tsunami just occurred 3 Yes
+			0.01 TAIL: 1
+				25 (B) Tsunami just occurred 2 No
+25 (B) Tsunami just occurred
+	 2 No
+		SUPPORTS: 1
+			0.0 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			1.0 TAIL: 0
+
+FREE_SUPPORTS:

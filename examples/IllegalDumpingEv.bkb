@@ -1,0 +1,158 @@
+COMPONENTS: 8
+
+32 (B) Illegal fishing has occurred
+	STATES: 2
+		  3 Yes
+		  2 No
+
+29 (B) Fish supply is sufficient
+	STATES: 2
+		  2 No
+		  3 Yes
+
+34 (B) Boarding skills are obtainable
+	STATES: 2
+		  3 Yes
+		  2 No
+
+36 (B) Fishing livelihood is threatened
+	STATES: 2
+		  3 Yes
+		  2 No
+
+19 (X) Boarding skills
+	STATES: 2
+		  3 Yes
+		  2 No
+
+27 (B) Attitude towards piracy
+	STATES: 2
+		  8 Negative
+		  8 Positive
+
+21 (B) Survival is moral
+	STATES: 2
+		  3 Yes
+		  2 No
+
+20 (B) Revenge is moral
+	STATES: 2
+		  3 Yes
+		  2 No
+
+27 (B) Attitude towards piracy
+	 8 Negative
+		SUPPORTS: 4
+			0.4 TAIL: 2
+				20 (B) Revenge is moral 3 Yes
+				21 (B) Survival is moral 2 No
+			0.75 TAIL: 2
+				21 (B) Survival is moral 2 No
+				20 (B) Revenge is moral 2 No
+			0.3 TAIL: 2
+				20 (B) Revenge is moral 2 No
+				21 (B) Survival is moral 3 Yes
+			0.2 TAIL: 2
+				21 (B) Survival is moral 3 Yes
+				20 (B) Revenge is moral 3 Yes
+	 8 Positive
+		SUPPORTS: 4
+			0.8 TAIL: 2
+				21 (B) Survival is moral 3 Yes
+				20 (B) Revenge is moral 3 Yes
+			0.7 TAIL: 2
+				21 (B) Survival is moral 3 Yes
+				20 (B) Revenge is moral 2 No
+			0.6 TAIL: 2
+				20 (B) Revenge is moral 3 Yes
+				21 (B) Survival is moral 2 No
+			0.25 TAIL: 2
+				20 (B) Revenge is moral 2 No
+				21 (B) Survival is moral 2 No
+34 (B) Boarding skills are obtainable
+	 2 No
+		SUPPORTS: 2
+			0.35 TAIL: 1
+				32 (B) Illegal fishing has occurred 3 Yes
+			0.7 TAIL: 1
+				32 (B) Illegal fishing has occurred 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.65 TAIL: 1
+				32 (B) Illegal fishing has occurred 3 Yes
+			0.3 TAIL: 1
+				32 (B) Illegal fishing has occurred 2 No
+29 (B) Fish supply is sufficient
+	 2 No
+		SUPPORTS: 2
+			0.65 TAIL: 1
+				32 (B) Illegal fishing has occurred 3 Yes
+			0.25 TAIL: 1
+				32 (B) Illegal fishing has occurred 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.35 TAIL: 1
+				32 (B) Illegal fishing has occurred 3 Yes
+			0.75 TAIL: 1
+				32 (B) Illegal fishing has occurred 2 No
+36 (B) Fishing livelihood is threatened
+	 2 No
+		SUPPORTS: 2
+			0.2 TAIL: 1
+				29 (B) Fish supply is sufficient 2 No
+			0.6 TAIL: 1
+				29 (B) Fish supply is sufficient 3 Yes
+	 3 Yes
+		SUPPORTS: 2
+			0.8 TAIL: 1
+				29 (B) Fish supply is sufficient 2 No
+			0.4 TAIL: 1
+				29 (B) Fish supply is sufficient 3 Yes
+32 (B) Illegal fishing has occurred
+	 2 No
+		SUPPORTS: 1
+			0.25 TAIL: 0
+	 3 Yes
+		SUPPORTS: 1
+			0.75 TAIL: 0
+20 (B) Revenge is moral
+	 2 No
+		SUPPORTS: 2
+			0.7 TAIL: 1
+				36 (B) Fishing livelihood is threatened 2 No
+			0.25 TAIL: 1
+				36 (B) Fishing livelihood is threatened 3 Yes
+	 3 Yes
+		SUPPORTS: 2
+			0.75 TAIL: 1
+				36 (B) Fishing livelihood is threatened 3 Yes
+			0.3 TAIL: 1
+				36 (B) Fishing livelihood is threatened 2 No
+21 (B) Survival is moral
+	 2 No
+		SUPPORTS: 2
+			0.25 TAIL: 1
+				36 (B) Fishing livelihood is threatened 3 Yes
+			0.7 TAIL: 1
+				36 (B) Fishing livelihood is threatened 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.75 TAIL: 1
+				36 (B) Fishing livelihood is threatened 3 Yes
+			0.3 TAIL: 1
+				36 (B) Fishing livelihood is threatened 2 No
+19 (X) Boarding skills
+	 2 No
+		SUPPORTS: 2
+			0.25 TAIL: 1
+				34 (B) Boarding skills are obtainable 3 Yes
+			0.95 TAIL: 1
+				34 (B) Boarding skills are obtainable 2 No
+	 3 Yes
+		SUPPORTS: 2
+			0.75 TAIL: 1
+				34 (B) Boarding skills are obtainable 3 Yes
+			0.05 TAIL: 1
+				34 (B) Boarding skills are obtainable 2 No
+
+FREE_SUPPORTS:
