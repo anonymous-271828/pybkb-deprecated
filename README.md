@@ -17,16 +17,17 @@ If you wish to run training from scratch, you will need to ensure the above requ
 1. Navigate to nips_experiments
 2. Run the following script to generate the scores for KEEL benchmarks:
 ```score
-python3 run_keel_benchmark_scores.py
+python3 run_keel_benchmark_scores.py /path/to/datasets /path/to/save/scores
 ```
+Optionally, pass a dataset name with --dataset_name=dataset otherwises the script will run through all the datasets.
 4. Upon completion of the KEEL score calculations, run the following script to learn the associated BKBs and BNs for KEEL:
 ```learn
-python3 run_keel_benchmark_from_scores.py
+python3 run_keel_benchmark_from_scores.py /path/to/datasets /path/to/save/results /path/to/scores --palim=palim --dataset_name=dataset_name
 ```
 
 To run the TCGA learning, first download the data as described above and run:
 ```learn_tcga
-python3 run_tcga.py
+python3 run_tcga.py /path/to/dataset /path/to/save/results
 ```
 
 ## Evaluation
