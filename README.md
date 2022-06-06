@@ -30,3 +30,36 @@ python3 run_tcga.py /path/to/dataset /path/to/save/results
 ```
 
 ## Evaluation
+Evaluation of BKBs and BNs are best done in the supplied Jupyter Notebooks. First, you should download the pre-learned BKBs and BNs hosted on [Zenodo](https://zenodo.org/record/6577348#.Yp3kr-xBxPY). You will then need to unzip these files and follow the instructions in the corresponding notebooks:
+- [KEEL Benchmark Analysis](https://github.com/anonymous-271828/pybkb/blob/master/notebooks/Keel%20Benchmark%20Analysis.ipynb)
+- [TCGA Analysis](https://github.com/anonymous-271828/pybkb/blob/master/notebooks/TCGA%20Analysis.ipynb)
+
+### Running the Notebooks
+We recommend setting up a python virtual environment to run all jupyter notebooks locally.
+
+1) Clone this repo and create a virtual environment with python 3.8 or above.
+``` bash
+python3.8 -m venv pybkb_venv
+. pybkb_venv/bin/activate
+```
+
+2) Run the included setup.py with
+``` bash
+python3 setup.py install
+```
+
+3) Make sure to install pygobnilp with pip or clone the pygobnilp repository.
+4) Install your virtual enivronment into the jupyter notebook kernels
+``` bash
+python3 -m ipykernel install --user --name=pybkb_venv
+``` 
+5) Install notebook extensions for ipywidgets with
+``` bash
+jupyter nbextension enable --py widgetsnbextension
+```
+6) Make sure you have downloaded the pre-learned BKBs from Zenodo [here](https://zenodo.org/record/6577348#.Yp3kr-xBxPY) and have unzipped these files locally.
+7) Launch the jupyter with
+``` bash
+jupyter notebook
+```
+8) Open the respective notebook, i.e. KEEL Benchmark Analysis or TCGA Analysis, and follow the notebook's instructions to evaluate BNs and BKBs to your liking. 
