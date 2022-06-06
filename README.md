@@ -15,18 +15,18 @@ We have included pre-trained BKBs and BNs at the following anonymous Zenodo repo
 
 If you wish to run training from scratch, you will need to ensure the above requirements are met, download the pre-processed KEEL datasets and/or TCGA breast cancer dataset from the following anonymous links: [Preprocessed KEEL dataset](https://zenodo.org/record/6580480#.Yo-2IlRBxPY) and [Preprocessed TCGA breast cancer dataset](https://zenodo.org/record/6584753#.Yo-1g1RBxPY). Then run the following to scripts:
 1. Navigate to nips_experiments
-2. Run the following script to generate the scores for KEEL benchmarks:
+2. Run the following script to generate the scores for KEEL benchmarks (Optionally, pass a dataset name with --dataset_name=dataset otherwises the script will run through all the datasets):
 ```score
-python3 run_keel_benchmark_scores.py
+python3 run_keel_benchmark_scores.py /path/to/datasets /path/to/save/scores
 ```
 4. Upon completion of the KEEL score calculations, run the following script to learn the associated BKBs and BNs for KEEL:
 ```learn
-python3 run_keel_benchmark_from_scores.py
+python3 run_keel_benchmark_from_scores.py /path/to/datasets /path/to/save/results /path/to/scores --palim=palim --dataset_name=dataset_name
 ```
 
 To run the TCGA learning, first download the data as described above and run:
 ```learn_tcga
-python3 run_tcga.py
+python3 run_tcga.py /path/to/dataset /path/to/save/results
 ```
 
 ## Evaluation
