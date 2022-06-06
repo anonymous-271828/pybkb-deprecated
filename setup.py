@@ -40,6 +40,7 @@ setup(
     description='A Python implementation of a Bayesian Knowledge Base and associated reasoning and learning algorithms.',
     packages=find_packages(),
     install_requires=REQUIRED_PACKAGES,
-    python_requires='>=3.8'
+    python_requires='>=3.8',
+    package_data={'pybkb': ['utils/assets/bkb-style.json']},
 )
 
